@@ -7,7 +7,7 @@ const urlParams = new URLSearchParams(queryString);
 
 const code = urlParams.get("code") || "";
 
-const baseURL = "https://slapshottech.github.io/spotify-widget-main/";
+const baseURL = "https://slapshottech.github.io/spotify-widget-main";
 const redirect_uri = `${baseURL}/configure`;
 let refresh_token = "";
 let access_token = "";
