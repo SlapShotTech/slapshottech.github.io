@@ -110,7 +110,7 @@ body {
 }
 
 #backgroundImage {
-	filter: blur(8px);
+	filter: blur(4px);
 	position: absolute;
 	width: 140%;
 	top: 50%;
@@ -119,7 +119,7 @@ body {
 }
 
 #backgroundImageBack {
-	filter: blur(8px);
+	filter: blur(4px);
 	position: absolute;
 	width: 140%;
 	top: 50%;
