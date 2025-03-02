@@ -1,6 +1,6 @@
 * {
 	--corner-radius: 10px;
-	--album-art-size: 1900px;
+	--album-art-size: 100px;
 }
 
 body {
@@ -92,7 +92,7 @@ border: 1px solid rgba(71, 255, 98, 1);
 
 #songInfo {
 	background: rgba(0, 0, 0, 0.5);
-	opacity: 0.9;
+	opacity: 0.4;
 	position: relative;
 	border-radius: var(--corner-radius);
 	padding: 0px 20px;
