@@ -83,7 +83,7 @@ body {
 
 #songInfo {
 	background: rgba(0, 0, 0, 0.5);
-	opacity: 0.4;
+	opacity: 0.9;
 	position: relative;
 	border-radius: var(--corner-radius);
 	padding: 0px 20px;
