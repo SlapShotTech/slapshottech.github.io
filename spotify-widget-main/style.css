@@ -119,7 +119,7 @@ body {
 }
 
 #backgroundImageBack {
-	filter: blur(20px);
+	filter: blur(8px);
 	position: absolute;
 	width: 140%;
 	top: 50%;
