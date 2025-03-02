@@ -36,15 +36,6 @@ body {
 	opacity: 0;
 	transition: all 0.5s ease;
 
-	/* From https://css.glass */
-background: rgba(71, 255, 98, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(71, 255, 98, 1);
-
-	
 }
 
 #albumArtBox {
