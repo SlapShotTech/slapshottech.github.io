@@ -12,7 +12,7 @@ body {
 	font-size: 30px;
 	text-align: center;
 	background-color: #D12025;
-	color: white;
+	color: #1ED760;
 	padding: 10px;
 	border-radius: 10px;
 	position: absolute;
@@ -166,7 +166,7 @@ body {
 	border-radius: 5px;
 	height: 5px;
 	width: 20%;
-	background-color: #ffffff;
+	background-color: #1ED760;
 	margin: 10px 0px;
 	transition: all 1s ease;
 }
