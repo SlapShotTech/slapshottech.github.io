@@ -1,0 +1,122 @@
+* {
+    --corner-radius: 15px;
+    --album-art-size: 120px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #6e45e1, #88619a);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainContainer {
+    font-family: inherit;
+    display: flex;
+    position: relative;
+    height: var(--album-art-size);
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--corner-radius);
+    padding: 15px;
+    margin: 20px;
+}
+
+#albumArtBox {
+    position: relative;
+    border-radius: var(--corner-radius);
+    overflow: hidden;
+    margin-right: 20px;
+    width: var(--album-art-size);
+    height: var(--album-art-size);
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#albumArt {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#songInfoBox {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 10px;
+}
+
+#songLabel {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#artistLabel {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+#progressBg {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    margin: 15px 0;
+}
+
+#progressBar {
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+#times {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-show {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.text-fade {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    #mainContainer {
+        margin: 10px;
+    }
+    
+    #songLabel {
+        font-size: 24px;
+    }
+    
+    #artistLabel {
+        font-size: 16px;
+    }
+} 
