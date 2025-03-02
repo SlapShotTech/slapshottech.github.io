@@ -12,7 +12,7 @@ body {
 	font-size: 30px;
 	text-align: center;
 	background-color: #D12025;
-	color: #1ED760;
+	color: white;
 	padding: 10px;
 	border-radius: 10px;
 	position: absolute;
@@ -30,12 +30,11 @@ body {
 	margin: 20px;
 	filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 1));
 	width: 100%;
-	max-width: 100px;
+	max-width: 500px;
 	bottom: calc(50% - 20px);
 	left: 50%;
 	opacity: 0;
 	transition: all 0.5s ease;
-
 }
 
 #albumArtBox {
@@ -43,7 +42,7 @@ body {
 	position: relative;
 	border-radius: var(--corner-radius);
 	overflow: hidden;
-	margin: 0px 10px 0px 0px;
+	margin: 0px 8px 0px 0px;
 	object-fit: cover;
 	width: var(--album-art-size);
 }
@@ -51,7 +50,7 @@ body {
 #albumArt {
 	width: 100%;
 	height: 100%;
-	position: relative;
+	position: absolute;
 	top: 0%;
 	object-fit: cover;
 }
@@ -130,7 +129,6 @@ body {
 }
 
 #artistLabel {
-	font-family: "SF Thin";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1;
@@ -139,7 +137,6 @@ body {
 }
 
 #songLabel {
-	font-family: "SF Bold";
 	font-weight: bold;
 	font-size: 20px;	
 	width: calc(100%);
@@ -161,7 +158,7 @@ body {
 	border-radius: 5px;
 	height: 5px;
 	width: 20%;
-	background-color: #1ED760;
+	background-color: #ffffff;
 	margin: 10px 0px;
 	transition: all 1s ease;
 }
